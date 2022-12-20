@@ -1,0 +1,103 @@
+.loginForm {
+  width: 50%;
+  background-color: #fff;
+  background-image: url(../../assets/design/logo_1.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 436px;
+    position: relative;
+    .formTitle {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 33px;
+      line-height: 130%;
+      color: #0a0e17;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 16px 0px;
+      width: 100%;
+      text-align: center;
+    }
+    .formLine {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: fit-content;
+      align-items: center;
+      margin-bottom: 10px;
+      label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 175%;
+        color: #8a92a6;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        width: 100%;
+        font-family: "SF Pro Display";
+      }
+      .input {
+        width: 100%;
+        height: 44px;
+        background: #ffffff;
+        border: 1px solid #8a92a6;
+        box-sizing: border-box;
+        border-radius: 4px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+      .submitButton {
+        border: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 24px;
+        position: static;
+        width: 188px;
+        height: 44px;
+        background: #8045cc;
+        border-radius: 4px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 24px 0px;
+        color: #fff;
+      }
+      .remember {
+        display: flex;
+        align-items: center;
+        .checkBox {
+        }
+        label {
+          color: #8a92a6;
+          font-size: 16px;
+        }
+      }
+      .forgotBtn {
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        line-height: 175%;
+        text-align: right;
+        color: #8045cc;
+      }
+
+      &.flex {
+        flex-direction: row;
+      }
+      &.spaceBetven {
+        justify-content: space-between;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.nextButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 24px;
+  .icon {
+    border: 1px solid #8a92a6;
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

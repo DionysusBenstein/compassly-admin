@@ -1,0 +1,34 @@
+.imageHead {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../assets/design/back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .buttons {
+    display: flex;
+    .buttonLink {
+      width: 164px;
+      height: 44px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: 0.25s;
+
+      &:hover {
+        border: 1px solid #4905db;
+        color: #4905db;
+      }
+      &.active {
+        background: #4905db;
+        color: #fff;
+        pointer-events: none;
+      }
+    }
+  }
+}

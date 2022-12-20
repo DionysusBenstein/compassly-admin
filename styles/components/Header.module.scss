@@ -1,0 +1,84 @@
+.header {
+  width: 100%;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px;
+  .profile {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    .data {
+      display: flex;
+      flex-direction: column;
+      padding-right: 16px;
+      justify-content: center;
+      background-color: #fff;
+      z-index: 2;
+      position: relative;
+      .name {
+        white-space: nowrap;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 175%;
+        color: #0a0e17;
+        text-align: right;
+      }
+      .status {
+        white-space: nowrap;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 130%;
+        text-align: right;
+        color: #8a92a6;
+      }
+    }
+    .avatar {
+      overflow: hidden;
+      border-radius: 100%;
+      flex: none;
+      width: 45px;
+      height: 45px;
+      background-color: #fff;
+      z-index: 2;
+      position: relative;
+      .ava {
+        border: 0;
+      }
+    }
+    .actionList {
+      position: absolute;
+      right: 0;
+      top: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: 0.25s;
+      .logout {
+        width: 188px;
+        height: 44px;
+        background: #ffffff;
+        border: 1px solid #8a92a6;
+        box-sizing: border-box;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 175%;
+        color: #c03221;
+      }
+    }
+
+    &:hover {
+      .actionList {
+        opacity: 1;
+        top: calc(100% + 10px);
+      }
+    }
+  }
+}
